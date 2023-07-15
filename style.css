@@ -1,3 +1,17 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  max-width: 400px;
+}
+
+.btn-lg {
+  margin: 20px 0px;
+}
+
 #city-input, #weather-output {
   max-width: 400px;
   margin: 0 auto;
