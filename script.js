@@ -16,7 +16,7 @@ const getWeatherData = (city) => {
 
 // Search City Function
 const searchCity = async () => {
-  const city = document.getElementById('city-input').ariaValueMax;
+  const city = document.getElementById('city-input').value;
   // Asynchronous code - First get the weather datat with "await"
   const data = await getWeatherData(city)
   // Show the weather data
