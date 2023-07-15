@@ -15,8 +15,9 @@ main {
   margin: 0px;
   padding: 10px;
   background-image: URL('img/weather.jpeg');
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .btn-lg {
