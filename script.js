@@ -30,4 +30,7 @@ const showWeatherData = (weatherData) => {
   document.getElementById('weather-type').innerText = weatherData.weather[0].main
   document.getElementById('min-temp').innerText = weatherData.main.temp_min
   document.getElementById('max-temp').innerText = weatherData.main.temp_max
+  document.getElementById('temp-c').innerText = ((weatherData.main.temp-32) / 1.8).toFixed(0)
+  document.getElementById('min-temp-c').innerText = (((weatherData.main.temp_min)-32) / 1.8).toFixed(0)
+  document.getElementById('max-temp-c').innerText = (((weatherData.main.temp_max)-32) / 1.8).toFixed(0)
 }
