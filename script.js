@@ -26,6 +26,7 @@ const searchCity = async () => {
 
 // Display data in DOM
 const showWeatherData = (weatherData) => {
+  console.log(weatherData)
   document.getElementById('temp').innerText = weatherData.main.temp
   document.getElementById('city-name').innerText = weatherData.name
   document.getElementById('weather-type').innerText = weatherData.weather[0].main
