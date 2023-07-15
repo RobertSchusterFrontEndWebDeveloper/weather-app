@@ -17,7 +17,6 @@ const getWeatherData = (city) => {
 // Search City Function
 const searchCity = async () => {
   const city = document.getElementById('city-input').value;
-  console.log(city)
   // Asynchronous code - First get the weather datat with "await"
   const data = await getWeatherData(city)
   // Show the weather data
@@ -26,7 +25,6 @@ const searchCity = async () => {
 
 // Display data in DOM
 const showWeatherData = (weatherData) => {
-  console.log(weatherData)
   document.getElementById('temp').innerText = weatherData.main.temp
   document.getElementById('city-name').innerText = weatherData.name
   document.getElementById('weather-type').innerText = weatherData.weather[0].main
