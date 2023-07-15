@@ -23,6 +23,11 @@ main {
 #city-input, #weather-output {
   width: 100%;
   margin: 0 auto;
+  background: none;
+}
+
+.card-header, .card-body {
+  background: none;
 }
 
 .banner {
