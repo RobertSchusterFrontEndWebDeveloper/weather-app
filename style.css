@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  max-width: 400px;
+  width: 100%;
 }
 
 main {
@@ -20,7 +20,7 @@ main {
 }
 
 #city-input, #weather-output {
-  max-width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -28,3 +28,14 @@ main {
   color: #ffd23F;
   font-family: sans-serif;
 }
+
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 400px;
+  }
+  #city-input, #weather-output {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+  
